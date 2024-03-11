@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #001e4d;
+}
+.app{
+    background: white;
+    width: 90%;
+   
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    /* display: flex; */
+
+}
+.app h1 {
+    display: flex;
+
+    justify-content: center;
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    padding: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+/* .answer-buttons{ */
+    /* display: flex;
+    flex-direction: column;
+    width: 20%;
+} */
+
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+}
+.btn:disabled{
+cursor: no-drop;
+}
+
+#next-button{
+    /* display: flex;
+    justify-content: center; */
+    display: block;
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto ;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}

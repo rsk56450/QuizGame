@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="user" data-id="1234567890" data-user="carinaanand" data-date-of-birth>
+        Carina Anand
+      </div>
+       <script> 
+        const el = document.querySelector("#user");
+
+        if (!("someDataAttr" in el.dataset)) {
+  el.dataset.someDataAttr = "mydata";
+  el.dataset.bc = "123"
+  // Result on JS: 'someDataAttr' in el.dataset === true
+  // Result on HTML: <div id="user" data-id="1234567890" data-user="carinaanand" data-some-data-attr="mydata">Carina Anand</div>
+} -->
+
+
+<input type="text" id="text-box" size="20" value="Hello world!" />
+<button onclick="selectText()">Select text</button>
+
+<script>
+ 
+//   function selectAns(e) {
+//     console.log(`selectAns is excuted `)
+//   }
+
+//   const obj = {
+//   id: 5,
+//   name: "Emily",
+//   designation: "Web Developer",
+//   skills: ["JavaScript", "Node", "Angular", "React","g"],
+//   team: []
+// };
+
+// console.log(obj);
+// console.log("arra y   ",obj.skills.forEach(ele=>{
+//   console.log("element is " ,ele)
+// }))
+
+//   selectAns();
+
+
+//   const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   console.log(`upper case =  ${upperCase[1]}` );
+
+function selectText() {
+  ele = document.getElementById("text-box");
+ 
+  ele.select();
+  ele.focus();
+  document.execCommand("bold")
+}
+
+let ar = ['el','ee',34,56];
+ar.forEach((e,index) => {
+  console.log(`element is ${e} and index is ${index}`)
+});
+
+</script>
+     
+</body>
+</html>
